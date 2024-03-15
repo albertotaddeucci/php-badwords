@@ -37,6 +37,8 @@ $text_replace = str_replace($input_badword, "***", $input_text);
 
     </p>
 
+    <p> Adesso la lunghezza è di <?php echo strlen($text_replace) ?> caratteri</p>
+
 
 </body>
 
