@@ -1,6 +1,3 @@
-<?php  ?>
-
-
 <!DOCTYPE html>
 <html lang="it">
 
@@ -16,7 +13,29 @@
 <body>
 
 
+    <div class="container">
 
+        <form action="results.php">
+
+            <div class="mb-3">
+                <label for="text" class="form-label">Testo completo</label>
+                <textarea class="form-control" id="text" name="text" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="badwords" class="form-label">Parola da censurare</label>
+                <input type="text" class="form-control" name="badword" id="badwords">
+            </div>
+
+            <button type="submit">Ottieni risultato</button>
+
+
+        </form>
+
+
+
+
+    </div>
 
 
     <!-- bootstrap -->
