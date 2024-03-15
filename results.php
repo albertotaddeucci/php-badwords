@@ -2,6 +2,10 @@
 
 $input_text = $_GET['text'];
 
+$input_badword = $_GET['badword'];
+
+$text_replace = str_replace($input_badword, "***", $input_text);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +28,15 @@ $input_text = $_GET['text'];
 
     </p>
 
+    <p> La lunghezza del testo è pari a <?php echo strlen($input_text) ?> caratteri </p>
+
     <h2>Testo censurato</h2>
+
+    <p>
+        <?php echo $text_replace ?>
+
+    </p>
+
 
 </body>
 
